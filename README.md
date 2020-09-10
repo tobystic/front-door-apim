@@ -80,7 +80,7 @@ Azure Front Door is a global HTTP\HTTPS load balancer that works at layer 7 prov
 - Health Probes: in order to determine the health of each backend, each Front Door environment periodically sends a synthetic HTTP/HTTPS request to each of your configured backends. Front Door then uses responses from these probes to determine the "best" backends to which it should route real client requests.
 - WAF at the edge provides application security against DDoS attacks or malicious users providing protection at scale without sacrificing on performance.
 - Caching: Azure Front Door delivers large files without a cap on file size. Azure Front Door is able to cache and deliver large files in chunks of 8 MB. In addition, Azure Front Door can dynamically compress content on the edge, resulting in a smaller and faster response to your clients.
-- URL Rewrite allows to copy any part of the incoming path that matches to a wildcard path to the forwarded path.
+- URL Rewrite enables changing part of the incoming path that matches a wildcard and replacing it in the forwarded path
 - IPv6, custom SSL certificates, rate limiting, geo-filtering, etc.
 
 For more information, see [Azure Front Door](https://docs.microsoft.com/azure/frontdoor/front-door-overview)
@@ -93,7 +93,7 @@ You can use the template.json ARM template and parameters.json file included in 
 
 ## Testing ##
 
-You can the Azure Portal to verify that the resources have been successfully deployed in your Azure subscription. In particular, click the API Management resource and check if the both the Mock API and Postman Echo API have been successfully deployed as shown in the following figure.
+You can use the Azure Portal to verify that the resources have been successfully deployed in your Azure subscription. In particular, click the API Management resource and check if both the Mock API and Postman Echo API have been successfully deployed as shown in the following figure.
 
 ![Postman Echo API](images/PostmanEchoAPI.png)
 
